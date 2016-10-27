@@ -1,0 +1,85 @@
+
+* Projects
+
+** TODO 王雄的书籍整理与学习 [3/4]                         :PROG:WORK:CHAOS:
+   DEADLINE: <2016-10-30 周日 20:00>
+   - [X] Chapter0: Introduction
+   - [X] Chapter1:
+   - [X] Chapter2:
+   - [X] Chapter3:
+   - [X] Chapter4:
+   - [X] Chapter5:
+   - [X] Chapter6:
+   - [X] Chapter7:
+   - [X] Chapter8:
+   - [X] Chapter9:
+   - [X] Chapter10:
+
+*** DONE Chapter 0
+    CLOSED: [2016-10-27 四 09:09]
+    :LOGBOOK:
+    CLOCK: [2016-10-25 周二 23:06]--[2016-10-25 周二 23:43] =>  0:37
+    :END:
+
+**** Description
+     Leading chapter, description of outline of this book.
+
+
+*** DONE Chapter1 ~  Chapter7
+    CLOSED: [2016-10-27 四 09:09]
+    :LOGBOOK:
+    CLOCK: [2016-10-26 三 14:07]--[2016-10-26 三 14:44] =>  0:37
+    :END:
+
+**** description
+     Shilnikov's theorem and Wangxiong's discovery of Chaos.
+
+
+*** DONE Chapter8 ~ Chapter13
+    CLOSED: [2016-10-27 四 13:05]
+    :LOGBOOK:
+    CLOCK: [2016-10-27 四 12:47]--[2016-10-27 四 13:04] =>  0:17
+    CLOCK: [2016-10-27 四 12:15]--[2016-10-27 四 12:40] =>  0:25
+    CLOCK: [2016-10-27 四 10:32]--[2016-10-27 四 10:57] =>  0:25
+    CLOCK: [2016-10-27 四 09:54]--[2016-10-27 四 10:19] =>  0:25
+    CLOCK: [2016-10-27 四 08:37]--[2016-10-27 四 09:34] =>  0:57
+    :END:
+
+    
+*** NEXT 参考文献处理
+    :LOGBOOK:
+    CLOCK: [2016-10-27 四 15:36]--[2016-10-27 四 16:32] =>  0:56
+    CLOCK: [2016-10-27 四 15:06]--[2016-10-27 四 15:31] =>  0:25
+    CLOCK: [2016-10-27 四 13:30]--[2016-10-27 四 13:55] =>  0:25
+    :END:
+
+** Scipy, Numpy and Pandas                            :PROG:INTEREST:PROGRAM:
+
+   
+** TODO TradeBlazer 学习 [0/1]
+   - [ ] 第一周课程
+   - [ ] 第二周课程
+*** NEXT 第一周课程
+    :LOGBOOK:
+    CLOCK: [2016-10-27 四 19:26]--[2016-10-27 四 19:33] =>  0:07
+    CLOCK: [2016-10-27 四 18:57]--[2016-10-27 四 19:22] =>  0:25
+    :END:
+
+* Miscellaneous
+
+* Finance
+
+** Oct
+*** Oct 26
+    1. 支出
+       + 快车： 15.00
+       + 午饭： 9.00 (鸡扒饭) + 3.00 (果汁)) + 11.00 (牛奶)
+       + 晚饭： 95.00 (港茶，请客) + 3.00 (矿泉水)
+    2. 收入
+       + 红包：500(老婆给买键盘)
+*** Oct 27
+    1. 支出
+       + 咖啡：20.00
+       + 午饭：9.00 (鸡扒饭)
+       + 键盘：539.00 (键盘)
+       + 晚饭：52.00 (汉堡王)
