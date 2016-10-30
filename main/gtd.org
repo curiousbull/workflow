@@ -76,15 +76,27 @@
     :END:
 **** DONE 视频学习
      CLOSED: [2016-10-28 五 08:57]
-**** TODO 笔记整理
-**** TODO 课后作业
+**** DONE 笔记整理
+     CLOSED: [2016-10-30 日 14:51] SCHEDULED: <2016-10-30 日 12:54>
+     :PROPERTIES:
+     :Effort:   2:00
+     :END:
+     :LOGBOOK:
+     CLOCK: [2016-10-30 日 14:25]--[2016-10-30 日 14:50] =>  0:25
+     CLOCK: [2016-10-30 日 13:58]--[2016-10-30 日 14:23] =>  0:25
+     CLOCK: [2016-10-30 日 13:32]--[2016-10-30 日 13:57] =>  0:25
+     CLOCK: [2016-10-30 日 13:10]--[2016-10-30 日 13:13] =>  0:03
+     :END:
+**** NEXT 课后作业
+     :LOGBOOK:
+     CLOCK: [2016-10-30 日 15:14]--[2016-10-30 日 15:20] =>  0:06
+     :END:
 * Miscellaneous
 ** DONE 与吴宗树公司签约合作
    CLOSED: [2016-10-28 五 13:46] SCHEDULED: <2016-10-28 五 09:30>
 ** TODO 下周一，在华强北，与吴宗树讨论写书事宜并听其讲课
    SCHEDULED: <2016-10-31 一 15:00>
-** 图像去模糊的 =github= 项目查看学习，[[https://github.com/alexjc/neural-enhance][Project location]]
-   
+** TODO 图像去模糊的 =github= 项目查看学习，[[https://github.com/alexjc/neural-enhance][Project location]]
 * Finance
 
 ** Oct
@@ -114,7 +126,9 @@
        + 杂项：268.00 (娱乐)
 *** Oct 30
     1. 支出
-       + 饮食：46.00 (Starbucks)
+       + 饮食：46.00 (Starbucks) + 3.50 (果汁) + 9.00 (鸡扒饭) + 5.00 (牛奶)
+       + 交通：0.50 (ofo) + 2.00 (M425) + 0.50 (ofo) + 2.00 (M425)
+
 
 * Private
 
