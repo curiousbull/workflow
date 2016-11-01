@@ -132,7 +132,7 @@
    :END:
 ** TODO 图像去模糊的 =github= 项目查看学习，[[https://github.com/alexjc/neural-enhance][Project location]]
 * Finance
-
+  
 ** Oct
 *** Oct 26
     1. 支出
@@ -169,7 +169,7 @@
        + 交通：2.00 (M425) + 0.50 (ofo) + 0.50 (ofo) + 5.00 (地铁)
 *** Nov 1
     1. 支出
-       + 饮食： 9.00 (鸡扒饭) + 20.00 (咖啡)
+       + 饮食： 9.00 (鸡扒饭) + 20.00 (咖啡) + 5.00 (宝矿力) + 76.00 (汉堡)
        + 交通： 2.00 (M425) + 1.00 (校车)
 * Private
 
