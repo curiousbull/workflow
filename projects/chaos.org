@@ -1,0 +1,217 @@
+#+TITLE: Notes on Systems with Stable Equilibriums 
+#+AUTHOR:   HuChen 
+#+EMAIL:    curioubull@163.com 
+#+LANGUAGE:  en
+#+INFOJS_OPT: view:showall toc:t ltoc:t mouse:underline path:http://orgmode.org/org-info.js
+#+LINK_HOME: http://home.fnal.gov/~neilsen
+#+LINK_UP: http://home.fnal.gov/~neilsen/notebook
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/notebook.css" />
+#+LaTeX_HEADER: \pdfmapfile{/home/neilsen/texmf/fonts/map/dvips/libertine/libertine.map}
+#+LaTeX_HEADER: \usepackage[ttscale=.875]{libertine}
+#+LaTeX_HEADER: \usepackage{sectsty}
+#+LaTeX_HEADER: \sectionfont{\normalfont\scshape}
+#+LaTeX_HEADER: \subsectionfont{\normalfont\itshape}
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+OPTIONS: H:2 num:nil toc:nil \n:nil @:t ::t |:t ^:{} _:{} *:t TeX:t LaTeX:t
+#+STARTUP: showall
+
+* Chaos System with Only One Stable Equilibrium
+** Introduction
+    1. An attractor is said to be strange if it has a non-integer dimension, and examples of such attractors are manifest.
+    2. Most systems with strange attractors have =at least= one *unstable* equilibrium.
+    3. An interesting question is whether a simple system (say, one that is 3D autonomous with only one quadratic nonlinearities)
+       can have all these three types of attractors concurrently. The answer is yes.
+** Silnikov Chaos
+   1. Proof of existence of chaos is due to Silnikov Theory:
+      #+BEGIN_QUOTE
+      Theorem 1. If a 3D given system $\dot{x} = F(x)$ has two equilibrium points $E_1$, $E_2$, of type saddle-focus, i.e. the
+      eigenvalues of the Jacobi matrix associated to the system in these points are $\gamma_k\in\mathbb{R}$ and $\alpha_k\pm{}i\beta_k\in\mathbb{C},k=1,2$,
+      such that
+      \begin{equation}
+      \alpha_1\alpha_2 > 0~or~\gamma_1\gamma_2 > 0
+      \end{equation}
+      and (the Silnikov inequality)
+      \begin{equation}
+      |\gamma_k| > |\alpha_k|, k = 1,2
+      \end{equation}
+      and if the system has a heteroclinic orbit connecting the equilibrium points $E_1$ and $E_2$, then the Poincare map defined on a transversal
+      section of the flow in a neighborhood of the heteroclinic orbit presents choas of horseshoe type.
+      #+END_QUOTE
+   2. Classification of chaos in the Silnikov type of 3D autonomous quadratic dynamical systems:
+      + Chaos of the Silnikov homoclinic-orbit type
+      + Chaos of the Silnikov heteroclinic-orbit type
+      + Chaos of the hybrid type with both Silnikov homoclinic and heteroclinic orbits.
+   3. In the classification, a system is required to have =at least= one *saddle-focus* type of equilibrium, which belongs to the hyperbolic type
+      at large.
+   4. Conjecture of "lurking behind most chaotic behavior is the existence of some homoclinic orbit or heteroclinic loop, making the significance
+      of the Silnikov approach quite evident."
+   5. */Question/*: Concerning the conjecture, will some homoclinic orbit or heteroclinic loop be so essential for generating chaos?
+   6. */Thought/*: The Silnikov theorem is only a sufficient condition, not a necessary one. In order to find a exception, we'll consider a extremely
+      special case:
+      #+BEGIN_QUOTE
+      */Is it possible for a system with only one equilibrium to generate chaos?/*
+      #+END_QUOTE
+   7. Inspired by Sprott D and Sprott E, trying to find a new system with stable equilibrium which can produce chaos.
+      
+      #+CAPTION: Equilibria and eigenvalues of several typical Sprott systems.
+      | Systems | Equations         | Equilibria              | Eigenvalues                     |
+      |---------+-------------------+-------------------------+---------------------------------|
+      |---------+-------------------+-------------------------+---------------------------------|
+      | Sprott  | $\dot x=-y$       | $(0,0,0)$               | $0, \pm i$                      |
+      | Case D  | $\dot y=x+z$      |                         |                                 |
+      |         | $\dot z=xz+3y^2$  |                         |                                 |
+      |---------+-------------------+-------------------------+---------------------------------|
+      | Sprott  | $\dot x=yz$       | $(0.25, 0.0625, 0)$     | $-1, \pm 0.5i$                  |
+      | Case E  | $\dot y=x^2-y$    |                         |                                 |
+      |         | $\dot z=1-4x$     |                         |                                 |
+      |---------+-------------------+-------------------------+---------------------------------|
+      | Sprott  | $\dot x=-0.2y$    | $(0, 0, 0)$             | $-1.13449, 0.06725\pm 0.58996i$ |
+      | Case I  | $\dot y=x+z$      |                         |                                 |
+      |         | $\dot z=x+y^2-z$  |                         |                                 |
+      |---------+-------------------+-------------------------+---------------------------------|
+      | Sprott  | $\dot x=2z$       | $(0, 0, 0)$             | $-2.31460, 0.15730\pm 1.30515i$ |
+      | Case J  | $\dot y=-2y+z$    |                         |                                 |
+      |         | $\dot z=-x+y+y^2$ |                         |                                 |
+      |---------+-------------------+-------------------------+---------------------------------|
+      | Sprott  | $\dot x=y+3.9z$   | $(1, 0.9, -0.23077)$    | $-1.43329,0.21664\pm 1.63526i$  |
+      | Case L  | $\dot y=0.9x^2-y$ |                         |                                 |
+      |         | $\dot z=1-x$      |                         |                                 |
+      |---------+-------------------+-------------------------+---------------------------------|
+      | Sprott  | $\dot x=-2y$      | $(-0.25, 0, 0.5)$       | $-2.31460, 0.15730\pm 1.30515i$ |
+      | Case N  | $\dot y=x+z^2$    |                         |                                 |
+      |         | $\dot z=1+y-2z$   |                         |                                 |
+      |---------+-------------------+-------------------------+---------------------------------|
+      | Sprott  | $\dot x=0.9-y$    | $(-0.44444, 0.9, -0.4)$ | $-1.23212,0.11606\pm 0.84674i$  |
+      | Case R  | $\dot y=0.4+z$    |                         |                                 |
+      |         | $\dot z=xy-z$     |                         |                                 |
+      |---------+-------------------+-------------------------+---------------------------------|
+      |---------+-------------------+-------------------------+---------------------------------|
+
+** The New System 
+*** Mechanism of Generating the New System
+**** Review Table \ref{tab:orgtable1} 
+     1. Those are Sprott chaotic systems with only one equilibrium.
+     2. Sprott D and E are both degenerate in the sense that their Jacobian eigenvalues at the equilibria
+        consist of one conjugate pair of pure imaginary numbers and one real number.
+     3. Clearly, the corresponding equilibria are not stable.
+**** Method
+     1. It's easy to imagine that a tiny perturbation to the system may be able to change such a degenerate 
+        equilibrium to a stable one.
+     2. Add a simple constant control parameter to the Sprott E chaotic system, trying to change the stability
+        of its single equilibrium to a stable one while preserving its chaotic dynamics.
+     3. The new system then can be written as:
+     
+          \begin{equation}
+            \left\{
+              \begin{aligned}
+                \dot{x} & = & yz + a \\
+                \dot{y} & = & x^2-y \\
+                \dot{z} & = & 1-4x 
+              \end{aligned}
+            \right.
+          \end{equation}
+     5. When $a=0$, it's the Sprott E system; when $a\neq{}0$, the stability of the single equilibrium
+        is fundamentally different, as can be verified and compared between the results shown in Table
+        \ref{tab:orgtable1} and Table \ref{tab:orgtable2}.
+        
+        #+CAPTION: Equilibria and Eigenvalues of The New System
+        | Systems    | Equations      | Equilibria               | Eigenvalues                      |   |
+        |------------+----------------+--------------------------+----------------------------------+---|
+        |------------+----------------+--------------------------+----------------------------------+---|
+        |            | $\dot x=yz+a$  | $(0.25, 0.0625, 0.08)$   | $-1.03140, 0.01570\pm 0.49208i$  |   |
+        | $a=-0.005$ | $\dot y=x^2-y$ |                          |                                  |   |
+        |            | $\dot z=1-4x$  |                          |                                  |   |
+        |------------+----------------+--------------------------+----------------------------------+---|
+        |            | $\dot x=yz+a$  | $(0.25, 0.0625, -0.096)$ | $-0.96069, -0.01966\pm 0.50975i$ |   |
+        | $a=0.006$  | $\dot y=x^2-y$ |                          |                                  |   |
+        |            | $\dot z=1-4x$  |                          |                                  |   |
+        |------------+----------------+--------------------------+----------------------------------+---|
+        |            | $\dot x=yz+a$  | $(0.25, 0.0625, -0.352)$ | $-0.84580, -0.07710\pm 0.53818i$ |   |
+        | $a=0.022$  | $\dot y=x^2-y$ |                          |                                  |   |
+        |            | $\dot z=1-4x$  |                          |                                  |   |
+        |------------+----------------+--------------------------+----------------------------------+---|
+        |            | $\dot x=yz+a$  | $(0.25, 0.0625, -0.48)$  | $-0.78217, -0.10891\pm 0.55476i$ |   |
+        | $a=0.030$  | $\dot y=x^2-y$ |                          |                                  |   |
+        |            | $\dot z=1-4x$  |                          |                                  |   |
+        |------------+----------------+--------------------------+----------------------------------+---|
+        |            | $\dot x=yz+a$  | $(0.25, 0.0625, -0.8)$   | $-0.60746, -0.19627\pm 0.61076i$ |   |
+        | $a=0.050$  | $\dot y=x^2-y$ |                          |                                  |   |
+        |            | $\dot z=1-4x$  |                          |                                  |   |
+        |------------+----------------+--------------------------+----------------------------------+---|
+        |------------+----------------+--------------------------+----------------------------------+---|
+*** Equilibrium and Stability
+    1. The new system \ref{eq:orglatexenvironment1} posese only one equilibrium:
+
+         \begin{equation}
+           P(x_E,y_E,z_E) = \left( \frac{1}{4},\frac{1}{16},-16a \right)
+         \end{equation}
+
+    2. Linearizing the system at the equilibrium P gives the Jacobian matrix:
+
+         \begin{equation}
+         J=\left[
+         \begin {array}{ccc} 0&z&y\\ \noalign{\medskip}2\,x&-1&0
+         \\ \noalign{\medskip}-4&0&0\end {array} \right] = \left[
+         \begin {array}{ccc} 0&-16\,a&\frac{1}{16}\\
+         \noalign{\medskip}\frac{1}{2}&-1&0
+         \\ \noalign{\medskip}-4&0&0\end {array}
+          \right].
+         \end{equation}
+
+    3. By solving the characteristic equation $|\lambda{}I - J|=0$, one obtains the Jacobian eigenvalues,
+       as shown in Table \ref{orgtable2}
+*** Lyapunov Exponents
+    1. The Lyapunov exponents are denoted by $L_i, i = 1,2,3$, and ordered as $L_1 > L_2 > L_3$.
+    2. A system is considered chaotic if $L_1 > 0, L_2 = 0, L_3 < 0$ with $|L_1| < |L_3|$.
+    3. The Lyapunov dimension is defined by:
+
+         \begin{equation*}
+           D_L=j+\frac{1}{|L_{j+1}|}\sum_{i=1}^j{L_i},
+         \end{equation*}
+    
+       where $j$ is the largest integer satisfying
+       $\sum_{i=1}^j{L_i}\ge0$ and $\sum_{i=1}^{j+1}{L_i}<0$.
+    4. Fig. \ref{fig:orgparagraph1} shows the dependence of the largest Lyapunov exponent of system 
+       \ref{eq:orglatexenvironment1} on the parameter a.
+    5. From Fig. \ref{fig:orgparagraph1}, it's clear that the largest Lyapunov exponet decreases as the parameter
+       a increases from -0.01 to 0.05.
+       
+       #+CAPTION: The largest Lyapunov exponent versus parameter a
+       #+LABEL:
+       #+ATTR_LATEX: width=5cm,angle=0
+       [[file:chaos/newsys_lya.jpg]]
+*** The Degenerate Case of $a=0$ (Sprott E System)
+    1. When $a=0$, the positive largest Lyapunov exponent of the system indicates the existence of chaos.
+    2. Fig. \ref{fig:orgparagraph2} (top part) shows apparently continuous chaotic waveform of $y(t)$ in the time domain; 
+       while in the frequency domain, Fig. \ref{fig:orgparagraph2} (bottom part) shows an apparently continuous broadband
+       spectrum $|y(t)|$.
+
+       #+CAPTION: Top: An apparently chaotic waveform of $y(t)(a=0)$. Bottom: An apparently continuous broadband frequency spectrum $|y(t)|$
+       #+LABEL:
+       #+ATTR_LATEX: width=5cm,angle=0
+       file:chaos/newsys_PP_000.jpg
+    4. These all prove that the Sprott E system, or the new system \ref{eq:orglatexenvironment1} with $a=0$, is indeed chaotic.
+    
+       #+CAPTION: The new system: chaotic attractor with $a=0$, including 3D views on the $x-y$ plane, $x-z$ plane and $y-z$ plane.
+       #+ATTR_LATEX: width=5cm,angle=0
+       [[file:chaos/newsys_3D_000.jpg]]
+*** The Case of $a = 0.006$: A New Type of Chaos
+    1. When $a > 0$, the stability of the equilibrium is fundamentally different from that of the 
+       new Sprott E system.
+    2. The Silnikov homoclinic criterion is therefore inapplicable to this case.
+    3. Take $a=0.006$ as an example, numerical calculation of the Lyapunov exponets give 
+       $L_1 = 0.0489, L_2 = 0, L_3=-1.0485$, indicating the existence of chaos.
+
+       #+CAPTION: The new system: chaotic attractor with $a=0.006$, including 3D views on the $x-y$ plane, $x-z$ plane and $y-z$ plane.
+       #+ATTR_LATEX: width=5cm,angle=0
+       file:chaos/newsys_3D_001.jpg
+    
+    4. In the time domain, Fig. \ref{fig:orgparagraph3} (top part) shows an apparently chaotic waveform $y(t)$; while in the frequency domain,
+       Fig. \ref{fig:orgparagraph3} (bottom part) shows apparently continuous broadband spectrum $|y(t)|$. These all prove that the
+       new system \ref{eq:orglatexenvironment1} with $a=0.006$ is indeed chaotic.
+    
+       #+CAPTION: Top: An apparently chaotic waveform of $y(t)(a=0.006)$. Bottom: An apparently continuous broadband frequency spectrum $|y(t)|$
+       #+ATTR_LATEX: width=5cm,angle=0
+       [[file:chaos/newsys_PP_001.jpg]]
+    
